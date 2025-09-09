@@ -60,6 +60,21 @@ def main():
                 tabla_filtrada = api.crear_filtrado(tabla_suelos, "departamento", filtro)
                 api.comprobar_filtro_invalido(tabla_filtrada)
                 tabla_filtrada.to_excel("auxiliar.xlsx", sheet_name = "Hoja 1", index = False)
+                
+            if(sub_opcion4 == 2):
+                tabla_filtrada = api.crear_filtrado(tabla_suelos, "municipio", filtro)
+                api.comprobar_filtro_invalido(tabla_filtrada)
+                tabla_filtrada.to_excel("auxiliar.xlsx", sheet_name = "Hoja 1", index = False)
+            
+            if(sub_opcion4 == 3):
+                tabla_filtrada = api.crear_filtrado(tabla_suelos, "cultivo", filtro)
+                api.comprobar_filtro_invalido(tabla_filtrada)
+                tabla_filtrada.to_excel("auxiliar.xlsx", sheet_name = "Hoja 1", index = False)
+            
+            if(sub_opcion4 == 4):
+                tabla_filtrada = api.crear_filtrado(tabla_suelos, "topografia", filtro)
+                api.comprobar_filtro_invalido(tabla_filtrada)
+                tabla_filtrada.to_excel("auxiliar.xlsx", sheet_name = "Hoja 1", index = False)
 
                 
 
